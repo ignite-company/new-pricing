@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#080808">
+<meta name="description" content="Compare Ignite’s growth systems for contractors: Lead Engine, Full System and an on-site content package.">
+<meta property="og:title" content="Pricing for Contractors | Ignite Growth Systems">
+<meta property="og:description" content="Three ways to get your lead generation, follow-up and content working together.">
+<title>Pricing for Contractors | Ignite Growth Systems</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+:root{color-scheme:dark;--bg:#080808;--panel:#121212;--panel-hi:#160e10;--stroke:#ffffff23;--white:#fafafa;--muted:#b8b3b3;--dim:#aaa2a3;--red:#f32632;--lightred:#ff7a80;--w:1180px}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--white);font:400 16px/1.55 Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+button,input{font:inherit}
+:focus-visible{outline:2px solid var(--lightred);outline-offset:5px}
+.wrap{width:min(var(--w),calc(100% - 64px));margin-inline:auto}
+.kicker,.label,.tag,.smallcap{font-size:.70rem;line-height:1.4;font-weight:800;letter-spacing:.15em;text-transform:uppercase}
+.kicker,.tag,.smallcap{color:var(--lightred)}
+.site-header{border-bottom:1px solid var(--stroke);background:#090909}
+.nav{min-height:73px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.logo{flex:none;display:inline-flex;align-items:center;min-height:40px;text-decoration:none}
+.logo img{display:block;width:156px;max-height:35px;object-fit:contain;object-position:left center}
+.nav-actions{display:flex;align-items:center;gap:25px}
+.nav-link{font-size:.84rem;text-decoration:none;font-weight:650;color:var(--muted)}
+.nav-link:hover{color:white}
+.button{display:inline-flex;min-height:46px;align-items:center;justify-content:center;gap:12px;text-decoration:none;border:1px solid transparent;border-radius:9px;padding:0 17px;font-size:.85rem;font-weight:800;line-height:1.15;transition:transform .22s ease,box-shadow .22s ease,border-color .22s ease,background .22s ease;white-space:normal;text-align:center}
+.button:hover{transform:translateY(-2px)}
+.button-light{color:#111;background:#fff}
+.button-light:hover{box-shadow:0 0 28px #f3263259}
+.button-outline{background:#ffffff05;border-color:#ffffff35;color:white}
+.button-outline:hover{border-color:#f32632a8;background:#f3263214}
+.arrow{width:16px;height:16px;flex:none}
+.hero{position:relative;isolation:isolate;overflow:hidden;text-align:center;padding:62px 0 52px}
+.hero::before,.hero::after{content:"";position:absolute;pointer-events:none;z-index:-1}
+.hero::before{inset:0;background:radial-gradient(ellipse at 50% 0,#8e172338 0%,transparent 67%)}
+.hero::after{inset:0;background:linear-gradient(#ffffff0b 1px,transparent 1px),linear-gradient(90deg,#ffffff0b 1px,transparent 1px);background-size:49px 49px;mask-image:linear-gradient(black,transparent 88%)}
+.hero .kicker{display:inline-flex;gap:9px;align-items:center;margin:0 0 15px;padding:7px 11px;border:1px solid #ff47563a;border-radius:7px;background:#190e10}
+.dot{width:6px;height:6px;border-radius:50%;background:var(--red);box-shadow:0 0 12px var(--red)}
+.hero h1{font-size:clamp(2.6rem,6.6vw,5.4rem);font-weight:900;letter-spacing:-.077em;line-height:1.00;margin:0 auto;max-width:860px}
+.hero h1 span{display:block;color:#ff616a}
+.hero p.copy{color:var(--muted);max-width:640px;margin:21px auto 0;font-size:clamp(.97rem,2vw,1.08rem)}
+.hero-marks{display:flex;justify-content:center;align-items:center;flex-wrap:wrap;gap:8px 18px;margin:22px 0 0;color:#d4cece;font-size:.73rem;font-weight:700}
+.hero-marks span+span::before{content:"";display:inline-block;vertical-align:middle;width:4px;height:4px;border-radius:50%;background:#f32632;margin-right:18px}
+.pricing{scroll-margin-top:22px}
+.section-label{display:flex;align-items:center;gap:11px;color:#d9d4d4;margin:0 0 15px}
+.section-label::after{content:"";height:1px;background:var(--stroke);flex:1}
+.cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.card{display:flex;flex-direction:column;position:relative;background:linear-gradient(159deg,#171717,#101010 63%);border:1px solid var(--stroke);border-radius:15px;padding:25px 22px 22px;min-width:0;transition:transform .25s ease,box-shadow .25s ease,border-color .25s ease}
+.card:hover{transform:translateY(-4px);border-color:#f326328e;box-shadow:0 18px 55px #0007}
+.card.featured{border-color:#f32632a8;background:radial-gradient(ellipse at 50% 0,#47151b70,transparent 55%),linear-gradient(159deg,#1b1214,#111 70%);box-shadow:0 0 35px #f3263218}
+.card.featured::before{content:"";position:absolute;top:-1px;left:18%;right:18%;height:1px;background:#ff6870;box-shadow:0 0 20px #ff4d59}
+.card-top{display:flex;justify-content:space-between;align-items:center;margin:0 0 16px;gap:8px}
+.card-index{color:#aaa2a3;font-variant-numeric:tabular-nums}
+.tag{border:1px solid #f326324d;background:#f3263212;padding:4px 7px;border-radius:5px;letter-spacing:.08em;font-size:.62rem}
+.card h2{font-size:clamp(1.33rem,2.45vw,1.8rem);font-weight:850;line-height:1.12;letter-spacing:-.045em;margin:0 0 8px}
+.audience{min-height:3.25em;margin:0;color:var(--muted);font-size:.85rem}
+.cost{margin:21px 0 0;line-height:1;letter-spacing:-.065em;font-size:clamp(2.1rem,4.2vw,3.25rem);font-weight:900;white-space:nowrap}
+.cost span{color:var(--muted);font-weight:650;font-size:.73rem;letter-spacing:0;margin-left:4px}
+.terms{color:#d2c8c9;font-size:.75rem;line-height:1.45;min-height:3em;margin:10px 0 15px}
+.features{list-style:none;padding:16px 0 10px;margin:0 0 14px;border-top:1px solid var(--stroke);display:grid;gap:11px;font-size:.83rem;color:#ede9e9}
+.features li{display:flex;align-items:baseline;gap:9px}
+.features li::before{content:"✓";color:var(--lightred);flex:none;font-weight:900;font-size:.84rem}
+.card .button{margin-top:auto;width:100%}
+.lifecycle{margin:33px auto 0;display:grid;grid-template-columns:1.12fr 1fr;gap:20px 37px;padding:29px 32px;border:1px solid #ffffff25;border-radius:15px;background:linear-gradient(110deg,#1b1113,#111 57%);align-items:center}
+.lifecycle h2,.faq h2,.last h2{margin:6px 0 0;font-size:clamp(1.65rem,3.7vw,2.45rem);font-weight:850;letter-spacing:-.06em;line-height:1.1}
+.lifecycle-copy{display:grid;gap:11px;color:var(--muted);font-size:.85rem}
+.lifecycle-copy p{margin:0}
+.lifecycle-copy strong{color:#fff}
+.faq{padding:58px 0 50px}
+.faq-grid{display:grid;grid-template-columns:.85fr 1.3fr;gap:28px 54px}
+.faq p{color:var(--muted);font-size:.89rem;margin:10px 0 0}
+details{border-bottom:1px solid var(--stroke)}
+summary{cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:12px;color:#fafafa;min-height:49px;font-size:.87rem;font-weight:750;list-style:none}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";font-size:1.28rem;color:var(--lightred);font-weight:500}
+details[open] summary::after{content:"−"}
+details p{padding:0 20px 14px 0;margin:0!important}
+.last{border-top:1px solid var(--stroke);border-bottom:1px solid var(--stroke);background:radial-gradient(ellipse at 50% 100%,#431217 0%,#110b0c 52%,#090909 93%);text-align:center;padding:37px 0 42px}
+.last p{color:var(--muted);margin:11px auto 17px;max-width:480px;font-size:.91rem}
+.footer{display:flex;align-items:center;justify-content:space-between;gap:15px;padding:16px 0;color:var(--dim);font-size:.73rem}
+.footer a{text-decoration:none}
+.footer a:hover{text-decoration:underline}
+@keyframes enter{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+.hero-content{animation:enter .55s cubic-bezier(.2,.7,.2,1) both}
+.card-inner{animation:enter .55s .08s cubic-bezier(.2,.7,.2,1) both;display:flex;flex-direction:column;flex:1}
+.card:nth-child(2) .card-inner{animation-delay:.16s}
+.card:nth-child(3) .card-inner{animation-delay:.24s}
+@media(max-width:950px){.wrap{width:min(var(--w),calc(100% - 44px))}.cards{gap:11px}.card{padding:20px 15px 16px}.features{font-size:.77rem}.hero{padding-top:53px}.audience{min-height:4.65em}}
+@media(max-width:760px){.wrap{width:calc(100% - 34px)}.nav{min-height:60px}.nav-link{display:none}.logo img{width:128px;max-height:31px}.nav .button{min-height:40px;padding:0 11px;font-size:.76rem}.nav .arrow{width:13px;height:13px}.hero{padding:40px 0 31px}.hero p.copy{margin-top:15px}.hero-marks{margin-top:17px;gap:7px 12px}.hero-marks span+span::before{margin-right:12px}.cards{grid-template-columns:1fr;gap:13px}.card{padding:20px 19px 18px}.card-top{margin-bottom:12px}.card h2{font-size:1.64rem}.cost{margin-top:16px}.audience,.terms{min-height:0}.terms{margin-bottom:12px}.features{font-size:.83rem;gap:9px;padding-top:12px}.lifecycle,.faq-grid{grid-template-columns:1fr;gap:14px}.lifecycle{margin-top:21px;padding:21px 19px}.faq{padding:37px 0}.footer{flex-wrap:wrap}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<svg xmlns="http://www.w3.org/2000/svg" width="0" height="0" aria-hidden="true" style="position:absolute"><symbol id="arrow" viewBox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol></svg>
+<header class="site-header">
+ <div class="wrap nav">
+  <a class="logo" href="https://ignite-co-funnel.vercel.app/" aria-label="Ignite Growth Systems home"><img src="https://assets.cdn.filesafe.space/bF1dT8IAVuvat84LkAVe/media/6a03b7c8f90b5bc73b099791.png" alt="Ignite Growth Systems" width="156" height="35"></a>
+  <nav class="nav-actions" aria-label="Primary"><a class="nav-link" href="#packages">Packages</a><a class="button button-light" href="https://api.leadconnectorhq.com/widget/booking/SmqZP8xY90P4YKenFu50">Book a call <svg class="arrow" aria-hidden="true"><use href="#arrow"/></svg></a></nav>
+ </div>
+</header>
+<main>
+ <section class="hero" aria-labelledby="page-title">
+  <div class="wrap hero-content">
+   <p class="kicker"><span class="dot" aria-hidden="true"></span> Growth systems for contractors</p>
+   <h1 id="page-title">More booked estimates.<span>Less chasing.</span></h1>
+   <p class="copy">From the first ad click to the booked estimate, we build and run the pieces your business needs. Pick the package that matches where you are now.</p>
+   <div class="hero-marks"><span>Clear setup pricing</span><span>60 days of active ad management</span><span>Optional ongoing management</span></div>
+  </div>
+ </section>
+ <section class="wrap pricing" id="packages" aria-label="Compare Ignite packages">
+  <p class="section-label label">Compare packages</p>
+  <div class="cards">
+   <article class="card">
+    <div class="card-inner">
+     <div class="card-top"><span class="smallcap card-index">01 / Acquisition</span></div>
+     <h2>Lead Engine</h2>
+     <p class="audience">You already have a website. You need a better way to turn inquiries into booked estimates.</p>
+     <p class="cost">$2,000 <span>setup</span></p>
+     <p class="terms">One-time payment upfront.<br>Ad spend is separate.</p>
+     <ul class="features">
+      <li>One landing page connected to your existing site</li>
+      <li>One ad campaign for one service in one market</li>
+      <li>Instant text follow-up for opted-in leads and a clear path to booking</li>
+      <li>60 days of support and active ad management included</li>
+     </ul>
+     <a class="button button-outline" href="https://api.leadconnectorhq.com/widget/booking/SmqZP8xY90P4YKenFu50">Discuss Lead Engine <svg class="arrow" aria-hidden="true"><use href="#arrow"/></svg></a>
+    </div>
+   </article>
+   <article class="card featured">
+    <div class="card-inner">
+     <div class="card-top"><span class="smallcap card-index">02 / Foundation + acquisition</span><span class="tag">Website included</span></div>
+     <h2>Full System</h2>
+     <p class="audience">Build a stronger online presence before sending paid traffic to it.</p>
+     <p class="cost">$3,500 <span>setup</span></p>
+     <p class="terms">$1,750 to start · $1,750 at handoff.<br>Ad spend is separate.</p>
+     <ul class="features">
+      <li>Everything in Lead Engine</li>
+      <li>Compact contractor website built to turn visits into inquiries</li>
+      <li>Google Business Profile setup or cleanup, project photos, and a process for requesting genuine reviews</li>
+      <li>60 days of support and active ad management included</li>
+     </ul>
+     <a class="button button-light" href="https://api.leadconnectorhq.com/widget/booking/SmqZP8xY90P4YKenFu50">Discuss Full System <svg class="arrow" aria-hidden="true"><use href="#arrow"/></svg></a>
+    </div>
+   </article>
+   <article class="card">
+    <div class="card-inner">
+     <div class="card-top"><span class="smallcap card-index">03 / System + on-site content</span></div>
+     <h2>Content System</h2>
+     <p class="audience">Get the full system plus original footage of your crew, projects, and work.</p>
+     <p class="cost">$6,500 <span>setup + travel</span></p>
+     <p class="terms">Then $2,000 every 3 months for continued editing and planning. Ad spend is separate.</p>
+     <ul class="features">
+      <li>Everything in Full System, including 60 days of active ad management</li>
+      <li>One planned on-location shoot day with Ignite</li>
+      <li>12 edited short-form videos planned for a 90-day release</li>
+      <li>Quarterly editing and content planning; additional shoots and travel are quoted separately</li>
+     </ul>
+     <a class="button button-outline" href="https://api.leadconnectorhq.com/widget/booking/SmqZP8xY90P4YKenFu50">Discuss Content System <svg class="arrow" aria-hidden="true"><use href="#arrow"/></svg></a>
+    </div>
+   </article>
+  </div>
+ </section>
+ <section class="wrap lifecycle" aria-labelledby="management-title">
+  <div><span class="smallcap">Included in every package</span><h2 id="management-title">60 days of active ad management.</h2></div>
+  <div class="lifecycle-copy">
+   <p><strong>First 60 days after campaign launch:</strong> Ignite actively manages your ads and supports the system. You fund ad spend separately.</p>
+   <p><strong>After that:</strong> Continue ad management for <strong>$500/month</strong> if you want Ignite to keep running it. If you decline or cancel, Ignite stops managing your ads. Quarterly content support is separate.</p>
+  </div>
+ </section>
+ <section class="faq wrap" aria-labelledby="faq-title">
+  <div class="faq-grid">
+   <div><span class="smallcap">The details</span><h2 id="faq-title">Before you book.</h2><p>What’s included, what’s separate, and what happens after launch.</p></div>
+   <div>
+    <details><summary>Is ad spend included?</summary><p>No. The package pays for the setup and the included management. Your advertising budget is separate and paid by your business.</p></details>
+    <details><summary>What counts as handoff for Full System?</summary><p>We walk you through the completed site and verify that a test inquiry goes through the agreed follow-up and booking flow. The balance isn’t tied to the end of the 60-day management period.</p></details>
+    <details><summary>What happens if I skip the $500/month plan?</summary><p>Ignite stops managing your ads once the included period ends, or when you cancel ongoing management. We’ll confirm who will be responsible for the campaigns next.</p></details>
+    <details><summary>Does quarterly content support include another shoot?</summary><p>No. The setup includes one shoot day and the initial batch of edits. Any return visit and travel are quoted separately; quarterly editing and content planning do not include ad management.</p></details>
+   </div>
+  </div>
+ </section>
+ <section class="last" aria-labelledby="next-title">
+  <div class="wrap"><span class="smallcap">Talk to Ignite</span><h2 id="next-title">Not sure which fits?</h2><p>Bring your website and tell us which jobs you want more of. We’ll talk through what you actually need.</p><a class="button button-light" href="https://api.leadconnectorhq.com/widget/booking/SmqZP8xY90P4YKenFu50">Book a call <svg class="arrow" aria-hidden="true"><use href="#arrow"/></svg></a></div>
+ </section>
+</main>
+<footer class="wrap footer"><span>© Ignite Growth Systems · Pricing shown in USD</span><a href="https://ignite-co-funnel.vercel.app/">Back to Ignite</a></footer>
+</body>
+</html>
